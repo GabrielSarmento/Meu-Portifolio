@@ -1,0 +1,27 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    height: 90vh;
+    background: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+ .banner p {
+     display: flex;
+     font-size: 1.4em;
+     padding: .5em;
+ }
+ 
+ .banner h1 {
+     display: flex;
+     font-size: 3.5em;
+     padding: .2em;
+ } 
+ .banner h4 {
+     font-size: 1.2em;
+     padding: 1.5em;
+     width: 50%;
+ }
+ 
