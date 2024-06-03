@@ -1,27 +1,63 @@
 .banner {
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    padding: 5em;
     height: 90vh;
-    background: url('../img/banner.jpg');
+    background: url('../img/banner.gif');
     background-size: cover;
     background-repeat: no-repeat;
- }
- 
- .banner p {
-     display: flex;
-     font-size: 1.4em;
-     padding: .5em;
- }
- 
- .banner h1 {
-     display: flex;
-     font-size: 3.5em;
-     padding: .2em;
- } 
- .banner h4 {
-     font-size: 1.2em;
-     padding: 1.5em;
-     width: 50%;
- }
- 
+    justify-content: center;
+}
+
+.banner p {
+    display: flex;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.banner h1 {
+    display: flex;
+    font-size: 4.5em;
+    font-weight: 530;
+    background-image: linear-gradient(to right, rgb(0, 132, 255), rgb(51, 133, 255), rgb(255, 123, 0));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    animation: blinkCursor 1s steps(40) infinite normal,
+        typing 2.5s steps(40) 1s normal both;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*---------animação da tag h1 - Layse Gabrielly -----------*/
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 9em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.banner h4 {
+    font-size: 1.2em;
+    width: 50%;
+    font-weight: 300;
+    opacity: .9;
+}

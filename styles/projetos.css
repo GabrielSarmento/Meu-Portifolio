@@ -1,0 +1,12 @@
+/*Seçao Projetos*/
+.Projetos{
+    padding: 4.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Projetos h2 {
+    color: white;
+    padding-bottom: 1em;
+}
