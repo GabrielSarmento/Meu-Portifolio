@@ -1,8 +1,12 @@
 @import url('styles/header.css');
 @import url(styles/banner.css);
 @import url(styles/projetos.css);
+
+/*Font Principal*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Font Pixelada*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 *{
     margin: 0;
@@ -11,16 +15,57 @@
 }
 :root{
     --cor-destaque: #007de4;
+    --cor-background: #000b14;
 }
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-background);
     color: white;
     font-family: Poppins, sans-serif;
 }
 
 
+/*--------- Animações efeito neon----------------------*/
+
+@keyframes neon {
+    0% {
+        box-shadow: 0 0 11px var(--cor-destaque);
+    }
+    
+    50% {
+        box-shadow: 0 0 5px var(--cor-destaque);
+
+    }
+
+    100% {
+        box-shadow: 0 0 0px var(--cor-destaque);
+
+    }
+}
 
 
+/* Animaçoes de entrada e saida de conteudo */
+
+[data-anima] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anima="esquerda"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anima="direita"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anima="centro"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anima].animacao {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
 
 
 
