@@ -1,0 +1,78 @@
+.sobre-min{
+    padding: 4.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sobre-min h2 {
+    color: white;
+    padding-bottom: 1em;
+}
+
+.container-sobre{
+    width: 80%;
+    background-color:  rgba(5, 0, 53, 0.438);
+    display: flex;
+    gap: 1.5em;
+    padding: 2em;
+    border-radius: 10px;
+    border: 2px solid var(--cor-destaque);
+}
+
+.container-sobre img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.container-sobre-descriçao{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.quemsou{
+    font-size:1.2em ;
+    margin-bottom: -1em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+
+.dev {
+    margin-top: -2em;
+}
+
+.desc {
+    font-weight: 250;
+}
+/*
+.buttons {
+    display: flex;
+    padding: 1em;
+    gap: 2em;
+    justify-content: center;
+
+
+}*/
+
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
+}
+
+.buttons a:hover{
+    background-color:rgba(0, 51, 80, 0.849) ;
+    transition: .5s;
+}
