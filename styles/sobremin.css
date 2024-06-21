@@ -17,7 +17,15 @@
     padding: 2em;
     border-radius: 10px;
     border: 2px solid var(--cor-destaque);
+    overflow: hidden;
+    animation: neon 2s alternate infinite ease-in-out;
 }
+
+.container-sobre:hover{
+    background-color: rgba(5, 0, 53, 0.849);
+    transition: .5s;
+}
+
 
 .container-sobre img {
     width: 40%;
