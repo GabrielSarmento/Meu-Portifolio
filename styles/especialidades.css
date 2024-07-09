@@ -1,0 +1,28 @@
+.especialidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em;
+}
+
+.imagens-container {
+    display: flex;
+    gap: 2em;
+}
+
+.imagens-container img{
+    width: 7em ;
+    transition: .5s;
+    opacity: .5;
+    background-color: rgba(56, 56, 56, 0.322);
+    border: 1px solid rgb(255, 74, 8);
+    padding: .5em;
+    border-radius: 5px;
+    animation: neon-laranja 2s alternate infinite ease-in-out;
+}
+
+.imagens-container img:hover{
+    transform: translateY(10px);
+    opacity: 1;
+}

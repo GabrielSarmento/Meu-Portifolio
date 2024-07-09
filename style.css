@@ -2,6 +2,7 @@
 @import url(styles/banner.css);
 @import url(styles/projetos.css);
 @import url(styles/sobremin.css);
+@import url(styles/especialidades.css);
 
 
 /*Font Principal*/
@@ -44,6 +45,21 @@ body {
     }
 }
 
+@keyframes neon-laranja {
+    0% {
+        box-shadow: 0 0 15px rgb(255, 74, 8);
+    }
+    
+    50% {
+        box-shadow: 0 0 5px rgb(255, 74, 8);
+
+    }
+
+    100% {
+        box-shadow: 0 0 0px rgb(255, 74, 8);
+
+    }
+}
 
 /* Animaçoes de entrada e saida de conteudo */
 
@@ -69,6 +85,13 @@ body {
     transform: translate3d(0,0,0);
 }
 
+footer {
+    background-color: rgb(0, 0, 180) ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding:.5em;
+}
 
 
 
