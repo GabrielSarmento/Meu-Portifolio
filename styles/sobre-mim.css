@@ -1,5 +1,4 @@
 .sobre-mim{
-    padding: 4.5em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,7 +9,8 @@
 }
 
 .container-sobre{
-    width: 55%;
+    width: auto;
+    margin: 0 10em;
     background-color:  rgba(5, 0, 53, 0.438);
     display: flex;
     gap: 1.5em;
@@ -28,7 +28,7 @@
 
 
 .container-sobre img {
-    width: 40%;
+    width: 30%;
     border-radius: 10px;
 }
 
