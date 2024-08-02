@@ -1,87 +1,75 @@
-.sobre-mim{
+.sobre-mim {
+    color: var(--cor-texto);
+    margin: 2em 4em;
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
-.sobre-mim h2 {
-    color: white;
-    padding-bottom: 1em;
+    align-items: center;
 }
 
-.container-sobre{
-    width: auto;
-    margin: 0 10em;
-    background-color:  rgba(5, 0, 53, 0.438);
+.container-sobre {
     display: flex;
-    gap: 1.5em;
-    padding: 2em;
+    flex-direction: row;
+    width: 80%;
+    background-color: rgba(5, 11, 32, 0.219);
+    border: 1px solid var(--cor-destaque);
     border-radius: 10px;
-    border: 2px solid var(--cor-destaque);
-    overflow: hidden;
+    padding: 2em;
+    gap: 30px;
+    align-items: center;
     animation: neon 2s alternate infinite ease-in-out;
 }
 
-.container-sobre:hover{
-    background-color: rgba(5, 0, 53, 0.849);
+.container-sobre img {
+    width: 40%;
+    border-radius: 10px;
+    opacity: 0.8;
     transition: .5s;
 }
 
-
-.container-sobre img {
-    width: 30%;
-    border-radius: 10px;
+.container-sobre img:hover {
+    opacity: 1;
 }
 
-.container-sobre-descriçao{
+.container-sobre-descriçao {
     display: flex;
+    gap: 10px;
     flex-direction: column;
-    gap: 2em;
+    align-items: flex-start;
 }
 
-.quemsou{
-    font-size:1.2em ;
-    margin-bottom: -1em;
+.quem-sou {
+    color: var(--cor-destaque);
+    font-weight: 600;
 }
 
-h4 {
-    font-size: 2em;
-}
-
-
-.dev {
-    margin-top: -2em;
+.container-sobre-descriçao h4 {
+    font-size: 1.6em;
 }
 
 .desc {
-    font-weight: 250;
+    color: var(--cinza-padrao);
+    margin: 35px 0;
 }
-/*
+
 .buttons {
     display: flex;
-    padding: 1em;
-    gap: 2em;
-    justify-content: center;
-
-
-}*/
-
-.buttons{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 2em;
+    gap: 30px;
 }
+
 
 .buttons a {
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.623);
-    color: white;
-    border: 2px solid var(--cor-destaque);
+    padding: 0.5em 1em;
+    width: 50%;
+    text-align: center;
     border-radius: 5px;
-    padding: 0.5em 1.5em;
+    background-color: rgba(0, 0, 0, 0.486);
+    color: var(--cor-texto);
+    transition: 0.9s;
+    border: 1px solid var(--cor-destaque);
 }
 
-.buttons a:hover{
-    background-color:rgba(0, 51, 80, 0.849) ;
-    transition: .5s;
+.buttons a:hover {
+    background-color: var(--cor-destaque);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
